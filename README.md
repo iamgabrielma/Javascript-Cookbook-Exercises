@@ -1,5 +1,5 @@
 # Javascript-Cookbook-Exercises
-<a href="amzn.to/1OfbGUO ">Javascript Cookbook Book Link</a>
+<a href="http://amzn.to/1OfbGUO ">Javascript Cookbook Book Link</a>
 
 If in the files a call to debug() can be seen instead of a console.foo() is due using JSC so I can test the exercises through the command line without having to use a browser or interface.
 
