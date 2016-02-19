@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>502</title>
+	<meta charset="UTF-8"> 
+</head>
+<body>
+
+<img src="" alt="image description">
+<img src="" alt="image description">
+<img src="" alt="image description">
+	
+<script type="text/javascript">
+/*
+Problem
+You want to access all img elements in a given document.
+*/
+
+var imgElements = document.getElementsByTagName('img');
+console.log('there are ' + imgElements.length + ' image elements'); 
+console.log(imgElements);
+// --> HTMLCollection [ <img>, <img>, <img> ]
+
+/* 
+The NodeList collection can be traversed like an array, but it isn’t an Array object—you can’t use Array object methods, such as push() and reverse(), with a NodeList. Its only property is length, and its only method is item()
+*/
+var img = imgElements.item(0) // first image
+var img = imgElements.item(1) // second image
+var img = imgElements.item(2) // third image
+
+var allElements = document.getElementsByTagName('*');
+console.log(allElements);
+
+
+</script>
+</body>
+</html>

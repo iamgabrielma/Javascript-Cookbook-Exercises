@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>503</title>
+	<meta charset="UTF-8"> 
+</head>
+<body>
+
+	<img src="" alt="image description">
+	<img src="" alt="image description">
+	<img src="" alt="image description">
+
+	<img src="" alt=""> <!-- img with empty alt attribute -->
+
+	<article>
+		<div>
+			<img src="" alt="special image">
+		</div>
+	</article>
+
+
+	<script type="text/javascript">
+		'use strict';
+		/*
+		Problem
+You want to get a list of all img elements that are descendants of article elements, without having to traverse an entire collection of elements.
+*/
+	
+	var imgs = document.querySelectorAll('article img');
+	console.log('selected special images: ' + imgs.length);
+
+	/* locating empty alt attribute */
+	var emptyAltImg = document.querySelectorAll('img[alt=""]');
+	console.log('images without alt attribute: ' + emptyAltImg.length);
+	var nonEmptyAltImg = document.querySelectorAll('img:not([alt=""])');
+	console.log('good job, ' + nonEmptyAltImg.length + ' have alt attribute');
+
+	</script>
+</body>
+</html>
