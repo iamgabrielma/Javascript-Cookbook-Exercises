@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>501</title>
+	 <meta charset="UTF-8"> 
+</head>
+<body>
+
+	<div id="testing">
+		<p>
+			This is some text.
+		</p>
+	</div>
+
+<script type="text/javascript">
+/*
+Problem
+You want to access a specific web page element, and then find its parent and child elements.
+*/
+'use strict';
+
+var testingDiv = document.getElementById('testing');
+//debug(testingDiv);
+window.console.log('hello');
+//alert(testingDiv); // --> [object HTMLDivElement]
+var parent = testingDiv.parentNode;
+var child = testingDiv.childNodes;
+
+//alert(parent.nodeName); // 'BODY'
+//alert(child.nodeName); // 'undefined'
+
+
+	
+</script>
+</body>
+</html>
