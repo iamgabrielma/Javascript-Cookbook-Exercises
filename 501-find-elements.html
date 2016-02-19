@@ -29,8 +29,19 @@ var child = testingDiv.childNodes;
 //alert(parent.nodeName); // 'BODY'
 //alert(child.nodeName); // 'undefined'
 
-
-	
+/* hasChildNodes method */
+var outputString = '';
+if (testingDiv.hasChildNodes()) {
+	for(var i = 0; i < child.length; i++){
+		outputString += 'has child '  + child[i].nodeName + '\n';
+	}
+}
+console.log(outputString); 
+/* -->
+has child #text
+has child P 
+has child #text
+*/
 </script>
 </body>
 </html>
