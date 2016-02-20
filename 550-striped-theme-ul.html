@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>550</title>
+	<meta charset="UTF-8"> 
+</head>
+<body>
+
+	<ul>
+		<li>item</li>
+		<li>item</li>
+		<li>item</li>
+		<li>item</li>
+		<li>item</li>
+		<li>item</li>
+	</ul>
+<script type="text/javascript">
+	var lis = document.querySelectorAll('li:nth-child(2n+1)');
+	for (var i = 0; i < lis.length; i++) {
+		lis[i].setAttribute("style", "background-color: #ffeeee");
+	}
+	/* also:
+	for (var i = 0; i < lis.length; i++) {
+		lis[i].setAttribute("style", "background-color: #ffeeee");
+	}
+	*/
+</script>
+</body>
+</html>
