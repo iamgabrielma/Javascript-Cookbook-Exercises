@@ -1,12 +1,20 @@
 # Javascript-Cookbook-Exercises
-<a href="http://amzn.to/1OfbGUO ">Javascript Cookbook Book Link</a>
 
-If in the files a call to debug() can be seen instead of a console.foo() is due using JSC so I can test the exercises through the command line without having to use a browser or interface.
+###Work in Progress###
 
-I wrote a post about it (Spanish) in aprendejs.es:
+<a href="http://amzn.to/1OfbGUO" target="_blank">Javascript Cookbook Book Amazon Link</a>
+
+Solving and understanding all the exercises in the Javascript Cookbook from O'Reilly is one of my objetives for 2016 in this endeavor for learning Javascript properly and deeply.
+
+Some comments:
+
+The debug() method is used through the files as a result of using JSC for solving the exercises, so I can test and debug in the command line and not being in the need of a browser or graphical UI. It can be substituted easily for console.log() or other console.foo() methods.
+
+If you're interested on how to use JSC and debug() I wrote a post about it (Spanish) in aprendejs.es:
 <a href="http://wp.me/p77DAf-g">Cómo ejecutar Javascript en Sublime Text</a>
 
-Links related to solving the exercises:
+###From here there will be dragons:###
+
 
 012
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach">forEach()</a>
@@ -32,7 +40,7 @@ Function literal or function expression
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
 The reduce() method applies a function against an accumulator and each value of the array (from left-to-right) to reduce it to a single value.
 
-##5. javascript and directly accessing the user interface##
+5. javascript and directly accessing the user interface
 
 502
 

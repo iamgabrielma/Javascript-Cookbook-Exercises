@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>540</title>
+	<meta charset="UTF-8"> 
+	<style type="text/css">
+
+	.stripe{
+      background-color: red;
+      color: white;
+      border: 1px solid black;
+    }
+
+    </style>
+</head>
+<body>
+
+	<p id="test">text with background</p>
+
+	<div>
+		<h3 id="hachetres">another text with different background</h3>
+	</div>
+
+<script type="text/javascript">
+	
+	/* CHANGE ONE PROPERTY */
+	var elem = document.getElementById('test');
+	elem.style.backgroundColor = "red";
+
+	console.log(document.getElementsByTagName('*'));
+	var elemTwo = document.getElementsByTagName('h3');
+	//elemTwo.style.backgroundColor = "green"; // --> elemTwo.style undefined?
+	console.log(elemTwo);
+
+	/* CHANGE MORE THAN ONE PROPERTY */
+	/*
+	var elem3 = document.getElementsByTagName('h3');
+	elem3.setAttribute("style", "background-color: blue, color: white, border: 1px solid black");
+	FAILS AGAIN, SETATTRBIUTE IS NOT A FUNCTION */
+		//var elem3 = document.getElementById('hachetres');
+		//elem3.setAttribute("style", "background-color: blue, color: white, border: 1px solid black");
+	// FAILS X2
+
+	/* PREDEFINE STYLE RULES */
+	var elemFour = document.getElementById('hachetres');
+	elemFour.setAttribute("class","stripe");
+	
+</script>
+
+</body>
+</html>
